@@ -22,10 +22,10 @@ def find_mismatch(text):
             opening_brackets_stack.pop()
 
 
-        if not opening_brackets_stack:
-            return "Success"
-        else:
-            return opening_brackets_stack[0].position + 1
+    if not opening_brackets_stack:
+        return "Success"
+    else:
+        return opening_brackets_stack[0].position + 1
         
 
 def main():
@@ -35,7 +35,7 @@ def main():
     if text[0] == "I":
         text = input() 
         mismatch = find_mismatch(text)
-        
+
     print(mismatch)
 
 if __name__ == "__main__":
