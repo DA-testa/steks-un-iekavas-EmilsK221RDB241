@@ -25,10 +25,10 @@ def find_mismatch(text):
 
 
      if not opening_brackets_stack:
-         return "Success"
+        return "Success"
      else:
-         v = opening_brackets_stack[0].position
-         return v + 1
+        v = opening_brackets_stack[0].position
+        return v + 1
 
 
 def main():
@@ -37,7 +37,6 @@ def main():
     if text[0] == "I":
         text = input()
         mismatch = find_mismatch(text)
-        
     print(mismatch)
 
 if __name__ == "__main__":
